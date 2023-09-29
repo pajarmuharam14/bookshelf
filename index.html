@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="Name-project-heading">
+        <h1>bookshelf apps</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="form-add-new-book">
+          <form action="#" id="form-input-book">
+            <fieldset>
+              <legend>add new book</legend>
+              <input type="text" placeholder="title" id="titleInput" />
+              <input type="text" placeholder="author" id="authorInput" />
+              <input type="number" placeholder="release date" id="yearInput" />
+              <button type="submit" class="btn-add">Add Book</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="list-new-book">
+          <div class="not-finished-reading">
+            <div class="heading">
+              <h2>not finished reading</h2>
+            </div>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Year</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tableUnfinishedReading"></tbody>
+            </table>
+          </div>
+          <div class="finished-reading">
+            <div class="heading">
+              <h2>finished reading</h2>
+            </div>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Year</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="tablefinishedReading"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
